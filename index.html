@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>My Beautiful Postcard</title>
+	</head>
+
+	<body>
+		<div class="postcard">
+			<div id="border">
+				<div class="postcard-header">
+					<h1>Hello, <span class="name">Whoever You Are!</span></h1>
+					<img
+						src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
+					/>
+				</div>
+				<div class="postcard-body">
+					<div class="body-left">
+						<h2>Dear <span>You</span>,</h2>
+						<p>Look what an awesome postcard I have created using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
+						<p>Isn't it great? Can't wait to push the level up a few notches!</p>
+						<p class="kisses">XOXO,</p>
+						<p class="signature">Me</p>
+					</div>
+					<div class="body-right">
+						<form id="postcard-form" action="#">
+							<div class="border-2">
+								<fieldset>
+									<label id="name-label" for="name-input">
+										<input id="name-input" name="name" type="text" placeholder="What's your name?"/ required>
+									</label>
+									<label id="sender-email-label" for="sender-email-input">
+										<input id="sender-email-input" name="sender-email" type="email" placeholder="What's your email?"/ required>
+									</label>
+									<label id="receiver-email-label" for="receiver-email-input">
+										<input id="receiver-email-input" name="receiver-email" type="email" placeholder="What's their email?"/
+										required>
+									</label>
+									<label id="message-label" for="message-input">
+										<input id="message-input" name="message" type="text" placeholder="Write a nice message!"/ required>
+									</label>
+								</fieldset>
+								<input type="submit" value="Send!" />
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="postcard-footer"></div>
+			</div>
+		</div>
+	</body>
+</html>
